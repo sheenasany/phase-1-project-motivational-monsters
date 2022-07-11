@@ -1,0 +1,22 @@
+The Basic Story of Application
+Motivational Monsters is a single page app that has monsters (static images/ animated images/stickers) floating on the page with a galaxy background. Each monster will be labeled with different common struggles for people in a coding bootcamp; i.e. “swamp snake monster” [from our end of day surveys] or “imposter monster” [the imposter syndrome], or “timesuck monster” [having time-management issues]. When you click or mouse over (tbd), you get randomly generated inspirational quotes. There’ll also be a form to submit the users custom positive quotes or general feedback of the quote (tbd), and a like button to show their appreciation for the randomized quote that they receive from a click event.
+ 
+The Core Features of MVP
+
+Successful user interaction with mouse over event (to possibly show a little animation of monster or a randomly generated quote), click events, and form submission from external api.
+ 
+The API Data 
+
+https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373 
+ 
+Challenges To Overcome
+ 
+- Getting the animation/static images on the page without using an API
+- Extracting specific keys and hiding other keys when using API as we only want to include the quote itself and not the author
+- Getting the mouse over event to work on the animated images of the monsters
+- Having issues connecting with the API if we go over quota (see link above)
+- Using the correct array iteration to manipulate API data for our specific API of choice (see link above) 
+ 
+Requirements of The Project
+
+We are going to use VS code to write HTML, CSS, and JavaScript code and stylesheets to make a functional single page web application as a MVP (Minimal V), pulling data from the provided API with forEach array method to iterate through the randomized data as well as 3 unique event listeners (mouse over, submit, and click).
