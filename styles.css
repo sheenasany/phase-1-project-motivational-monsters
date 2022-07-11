@@ -18,3 +18,30 @@ body {
     left: 10%
  }
 
+ #dinosaur-monster > img {
+    max-height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 20%
+ }
+
+#eyeball-monster > img {
+    max-height: 200px;
+    position: absolute;
+    top: 35%;
+    left: 60%
+}
+
+#bomb-monster > img {
+    max-height: 200px;
+    position: absolute;
+    top: 30%;
+    left: 40%
+}
+
+#blob-monster > img {
+    max-height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 80%
+}
