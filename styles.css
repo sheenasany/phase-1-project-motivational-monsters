@@ -11,6 +11,14 @@ body {
     background-position: center center;
  }
 
+header {
+        display: block;
+        color: #D2F8FA;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 25px;
+        text-align: center;
+}
+
  #swamp-monster > img {
     max-height: 150px;
     position: absolute;
@@ -24,6 +32,8 @@ body {
     top: 50%;
     left: 20%
  }
+
+ 
 
 #eyeball-monster > img {
     max-height: 200px;
