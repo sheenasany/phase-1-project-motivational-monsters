@@ -13,13 +13,21 @@
 
 const commentlist = document.getElementById('comments-list')
 
-
-
-form = document.getElementById('comment-form')
-form.addEventListener('submit', (event) => {
+form1 = document.getElementById('comment-form')
+form1.addEventListener('submit', (event) => {
     event.preventDefault()
-    const newComment = event.target.comment.value
+    const newComment1 = event.target.comment.value
     const li = document.createElement("li")
-    li.textContent = newComment
+    li.textContent = newComment1
+    commentList.append(li)
+    console.log(form1)
+})
+
+form2 = document.getElementById('comment-form2')
+form2.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const newComment2 = event.target.comment.value
+    const li = document.createElement("li")
+    li.textContent = newComment2
     commentList.append(li)
 })
