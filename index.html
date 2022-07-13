@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Motivational Monsters</title>
     <script src="index.js"></script> 
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
@@ -15,20 +15,28 @@
         <h2>Where your inner coding monsters enourage rather than terrify</h2>
     </header>
 
-    </div>    
-    <div id="dinosaur-monster">
-        <img src="/images/dinosaur monster.gif"><img>
-        <button id="angry">"I'm angry!"</button>
+    <!--Gif Image Container-->
+    <div class="gif" >
+        <img id="dinosaur-monster" src="./images/dinosaur-monster.gif" alt="gif-preset">
+        <img id="eyeball-monster" src="./images/eyeball-monster.gif" alt="gif-preset">  
+        <img id="bomb-monster"src="./images/bomb-monster.gif" alt="gif-preset">
+        <img id="blob-monster" src="./images/blob-monster.gif" alt="gif-preset">
+   
+   <!--Static Image Container-->
+     <div class="static-container">
+        <img id="dinosaur-still" src="./images/dinosaur-still.png" alt="still-preset">
+        <img id="bomb-still" src="./images/bomb-still.png" alt="still-preset">
+        <img id="eyeball-still" src="./images/eyeball-still.png" alt="still-preset">
+        <img id="blob-still" src="./images/swamp-still.png" alt="still-preset">
+   
+    <!--Button Container-->
+    <div id="quotes">
+        <button type="button">"I'm angry!</button>
     </div>
-    <div id="eyeball-monster">
-        <img src="/images/eyeball monster.gif"></img>
-     </div>   
-    <div id="bomb-monster">
-        <img src="/images/bomb monster.gif"></img>
     </div>
-    <div id="blob-monster">
-        <img src="/images/blob monster.gif"></img>
-    </div> 
+    </div>
+     
+    <!--Comments Container-->
     <ul id="comments-list" class="comments"></ul>   
     <form id="comment-form1" class="comment-form1">
         <input

@@ -1,6 +1,6 @@
 // //write your code here!
 
-// document.addEventListener('DOMContentLoaded', () => {
+
 
 // fetch("https://type.fit/api/quotes")
 //   .then(function(response) {
@@ -9,6 +9,11 @@
 //   .then(function(data) {
 //     console.log(data);
 //   });
+
+const dinosaurGif = "./images/dinosaur-monster.gif"
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("hello")
+})
 
 
 const commentlist = document.getElementById('comments-list')
