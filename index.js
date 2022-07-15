@@ -1,38 +1,36 @@
-// //write your code here!
-
-
-
-// fetch("https://type.fit/api/quotes")
-//   .then(function(response) {
-//     return response.json();
-//   })
-//   .then(function(data) {
-//     console.log(data);
-//   });
-
-const dinosaurGif = "./images/dinosaur-monster.gif"
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("hello")
-})
 
+const commentList = document.getElementById("comment-list")
+console.log(commentList);
+ const form = document.getElementById("comment-form");
+ console.log(form)
 
-const commentlist = document.getElementById('comments-list')
-
-form1 = document.getElementById('comment-form')
-form1.addEventListener('submit', (event) => {
+ form.addEventListener("submit", (event) => {
     event.preventDefault()
-    const newComment1 = event.target.comment.value
-    const li = document.createElement("li")
-    li.textContent = newComment1
-    commentList.append(li)
-    console.log(form1)
+    // console.log("hello")
+    // console.log(event.target.comment.value)
+    const newComment = (event.target.comment.value)
+    const lia = document.createElement("li")
+    lia.textContent = newComment
+    commentList.append(lia)
+
+
+ })
+
+const likeCount = document.getElementById("like-count")
+
+const likeButton = document.getElementById("like-button")
+likeButton.addEventListener('click', () => {
+    likeCount.dataset.likeCount++
+    likeCount.textContent = likeCount.dataset.likeCount + " likes"
 })
 
-form2 = document.getElementById('comment-form2')
-form2.addEventListener('submit', (event) => {
-    event.preventDefault()
-    const newComment2 = event.target.comment.value
-    const li = document.createElement("li")
-    li.textContent = newComment2
-    commentList.append(li)
+const dinoGif = document.getElementById("dinosaur-monster")
+const btn = document.createElement("button")
+btn.textContent = "RAWR"
+dinoGif.append(btn)
+
+
+
 })
+
