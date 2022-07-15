@@ -1,59 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Motivational Monsters</title>
-    <script src="index.js"></script> 
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href=" https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css"></head>
+   <title>Motivational Monsters</title>
 <body>
-    <header>
-        <h1>Motivational Monsters</h1>
-        <h2>Where your inner coding monsters enourage rather than terrify</h2>
-    </header>
-
-    <!--Gif Image Container-->
-    <div class="gif" >
-        <img id="dinosaur-monster" src="./images/dinosaur-monster.gif" alt="gif-preset">
-        <img id="eyeball-monster" src="./images/eyeball-monster.gif" alt="gif-preset">  
-        <img id="bomb-monster"src="./images/bomb-monster.gif" alt="gif-preset">
-        <img id="blob-monster" src="./images/blob-monster.gif" alt="gif-preset">
-   
-   <!--Static Image Container-->
-     <div class="static-container">
-        <img id="dinosaur-still" src="./images/dinosaur-still.png" alt="still-preset">
-        <img id="bomb-still" src="./images/bomb-still.png" alt="still-preset">
-        <img id="eyeball-still" src="./images/eyeball-still.png" alt="still-preset">
-        <img id="blob-still" src="./images/swamp-still.png" alt="still-preset">
-   
-    <!--Button Container-->
-    <div id="quotes">
-        <button type="button">"I'm angry!</button>
-    </div>
-    </div>
-    </div>
-     
-    <!--Comments Container-->
-    <ul id="comments-list" class="comments"></ul>   
-    <form id="comment-form1" class="comment-form1">
-        <input
-          class="comment-input1"
-          type="text"
-          name="comment"
-          id="comment"
-          placeholder="Add a comment..."
-        />
-        <form id="comment-form2" class="comment-form2">
-            <input
-              class="comment-input2"
-              type="text"
-              name="comment"
-              id="comment"
-              placeholder="Add a comment..."
-            />
-
-</body>
+   <script src="index.js"></script>
+   <header>
+       <h1>Motivational Monsters</h1>
+       <h2>Where your inner coding monsters enourage rather than terrify</h2>
+   </header>
+   <div id="monster-container">
+    <div id="dinosaur-monster" class="monster">
+       <img id="dino-monster" src="images/dinosaur_monster.gif"
+       alt="dino monster"/>
+       <p id="dino-p"></p>
+       <div class = "likes-section">
+           <span id = "like-count1" class = "likes">0 like
+           </span>
+           <button id="like-button1" class="like-button">♥</button>
+       </div>
+   </div>
+   <div id="eyeball-monster" class="monster">
+       <img src="images/eyeball_monster.gif"
+       alt="eyeball monster"/>
+       <p id="eyeball-p"></p>
+       <div class = "likes-section">
+           <span id = "like-count2" class = "likes">0 likes
+           </span>
+           <button id="like-button2" class="like-button">♥</button>
+       </div>
+   </div>
+   <div id="bomb-monster" class="monster">
+       <img src="images/bomb_monster.gif"
+       alt="bomb monster"/>
+       <p id="bomb-p"></p>
+       <div class = "likes-section">
+           <span id = "like-count3" class = "likes">0 likes
+           </span>
+           <button id="like-button3" class="like-button">♥</button>
+       </div>
+   </div>
+   <div id="blob-monster" class="monster">
+       <img src="images/blob_monster.gif"
+       alt="blob monster"/>
+       <p id="blob-p"></p>
+       <div class = "likes-section">
+           <span id = "like-count4" class = "likes"> 0 likes
+           </span>
+           <button id="like-button4" class="like-button">♥</button>
+       </div>
+   </div>
+   </div>
+   <!--Button Container-->
+   <div id="quotes">
+       <button id="mad-button">Feeling Swamped? Click Here!</button>
+           </div>
+       <p id='button-Container'></p>
+   <div id ="comments-box">
+   <form id="comment-form">
+       <input
+         class="comment-input" id="comment" placeholder="Add a comment...">
+       <button type="submit"  id= "submit">Post</button>        </form>
+       <ul id="comment-list">
+       </ul>
+        </div>
+       </body>
 </html>
+ 
+ 
+ 
+ 

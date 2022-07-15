@@ -1,8 +1,7 @@
-/* body {
-    background: url(./images/galaxy\ background.jpg) center no-repeat;
-} */
 
+ 
 body {
+    width: 100%;
     height: 100vh;
     min-height: 100%;
     background-image: url(https://www.fivestardatarecovery.com/wp-content/uploads/top-72-black-abstract-background-hd-background-spot.jpg);
@@ -10,48 +9,98 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
  }
-
-header {
+  
+ header {
         display: block;
         color: #D2F8FA;
         font-family: 'Press Start 2P', cursive;
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
-}
-
- #swamp-monster > img {
-    max-height: 150px;
-    position: absolute;
-    top: 25%;
-    left: 10%
  }
-
- #dinosaur-monster > img {
+  
+  
+ #dinosaur-monster    {
+    text-align: center;
     max-height: 150px;
-    position: absolute;
-    top: 50%;
+    position: flex;
+    top: 40%;
     left: 20%
  }
-
- 
-
-#eyeball-monster > img {
+  
+ #eyeball-monster > img {
     max-height: 200px;
-    position: absolute;
+    position: flex;
     top: 35%;
     left: 60%
-}
-
-#bomb-monster > img {
+ }
+  
+ #bomb-monster > img {
     max-height: 200px;
-    position: absolute;
+    position: flex;
     top: 30%;
     left: 40%
-}
-
-#blob-monster > img {
+ }
+  
+ #blob-monster > img {
     max-height: 200px;
-    position: absolute;
+    position: flex;
     top: 50%;
     left: 80%
-}
+ }
+  
+  
+ #like-count1,#like-count2, #like-count3, #like-count4, #button-Container{
+  
+    color: rgb(255, 255, 255);
+    border: black
+ }
+  
+  
+ #button-Container {
+    background-color:rgba(31, 31, 128, 0.802);
+    border-radius: 0.5rem;
+    border: 0.5px solid rgb(0, 0, 0);
+ }
+  
+ .monster, .likes-section{
+    display: inline-block;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+ }
+  
+ #mad-button {
+    font-size: 18px;
+    background-color: #555555;
+    border-radius: 50%;
+    padding: 12px 28px;
+    background: transparent;
+    color: whitesmoke;
+    font-family: "Courier New";
+    position:fixed;
+    bottom:200px;
+    display: flex;
+    justify-content: center;
+    left: 30%;
+    right: 30%;
+ }
+
+ #comments-box{
+    width:20%;
+    height: 30%;
+    position: fixed;
+    list-style: circle;
+    top: 90%;
+    left: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translate(-50%,-50%);
+    background-color:rgba(125, 255, 223, 0.802);
+    border-radius: 0.5rem;
+    /* display: flex; */
+    border: 1px solid #000;
+    justify-content: center;
+ }
+  
+ #dino-p, #bomb-p, #blob-p, #eyeball-p{
+    color:rgb(255, 255, 255)
+   
+ }
+ 
